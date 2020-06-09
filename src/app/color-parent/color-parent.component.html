@@ -1,0 +1,4 @@
+<div *ngFor="let item of testArray; let i = index">
+  <button (click)="buttonClicked(item)">{{item.id}}</button>
+</div>
+<app-color-child [someColor]="selectedItem?.color" (colorChanged)="handleColorChanged($event)"></app-color-child>
